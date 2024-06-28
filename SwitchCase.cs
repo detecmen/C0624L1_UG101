@@ -7,57 +7,60 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Enter month: ");
-        int month = Convert.ToInt32(Console.ReadLine());
-        switch(month)
+        Console.InputEncoding = Encoding.Unicode;
+        Console.OutputEncoding = Encoding.Unicode;
+        Console.Write("Enter day : ");
+        int day =  Convert.ToInt32(Console.ReadLine());
+        
+        //Display 
+
+        switch(day)
         {
             case 1 : 
             {
-                Console.Write("31 days");
+                Console.Write("Thứ 2 ");
                 break;
             }
             case 2 :
             {
-                Console.Write("28 or 29 days");
+                Console.Write("thứ 3");
                 break;
             }
             case 3 :
             {
-                Console.Write("31 days");
+                Console.Write("thứ 4");
                 break;
             }
             case 4 :
             {
-                Console.Write("30 days");
+                Console.Write("thứ 5");
                 break;
+            
             }
             case 5 :
             {
-                Console.Write("31 days");
+                Console.Write("thứ 6");
                 break;
-            }
+            
+            } 
             case 6 :
             {
-                Console.Write("30 days");
+                Console.Write("thứ 7");
                 break;
+            
             }
-            case 7 :
+            case 7 : 
             {
-                Console.Write("31 days");
+                Console.Write("CN");
                 break;
+            
             }
-            case 8 :
+            default:
             {
-                Console.Write("31 days");
+                Console.WriteLine("số bạn nhập ko hợp lệ");
                 break;
             }
-            case 9 :
-            {
-                Console.Write("31 days");
-                break;
-            }
-            }
-            default
+        
         }
     }
-}
+} 
